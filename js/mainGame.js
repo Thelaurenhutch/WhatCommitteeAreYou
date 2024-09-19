@@ -1,127 +1,138 @@
 const gameData = {
     "1": {
-        "text": "You and your veggie friends want to hangout in VeggieVille. What snacks are you bringing?",
+        "text": "You open your computer on Monday morning, what is the first thing you do?",
         "image" : "smaller_images/snackies.png",
 "choices": {
-            "Beef sticks": [2,["Jalapeno","Bok Choy"]],
-            "Granola": [2,["Broccoli", "Garlic", "Pumpkin"]],
-            "Cucumbers and carrots": [2,["Potato", "Leek", "Tomato"]],
-            "Crackers and cheese": [2, ["Green Bean", "Carrot"]]
+            "Read the news": [2,["Super PAC","Candidate Committee"]],
+            "The Daily Wordle": [2,["You moved to Canada instead", "Leadership PAC", "Just a Donor"]],
+            "Check the calendar to see what I have going on today.": [2,["Separate Segregated Fund", "FEC Commissioner", "a RAD Analyst"]],
+            "Check my emails": [2, ["Joint Fundraising Committee", "National Party Committee"]]
         }
     },
     "2": {
-        "text": " Where are you guys going to go?",
+        "text": " You see the election is coming up soon, what's the first thing you'll do to prepare?",
         "image" : "smaller_images/where_to.png",
 "choices": {
-            "The beach": [3, ["Onion", "Green Bean", "Bok Choy"]],
-            "A cute book store": [4,["Broccoli", "Tomato","Leek", "Carrot"]],
-            "Your friend's apartment": [5,["Pumpkin", "Potato", "Napa Cabbage"]],
-            "Mount Evergetable": [6, ["Garlic", "Jalapeno"]]
+            "Ask my wife who she is voting for": [3, ["A committee with absolutely no activity", "Joint Fundraising Committee", "Candidate Committee"]],
+            "You start researching candidates and their positions": [4,["You moved to Canada instead", "a RAD Analyst","FEC Commissioner", "National Party Committee"]],
+            "Donate $10 to the candidate whose name you recognize in your district": [5,["Just a Donor", "Separate Segregated Fund", "Hybrid Committee"]],
+            "You google how you can get involved": [6, ["Leadership PAC", "Super PAC"]]
         }
     },
     "3": {
-        "text": "After gearing up with sunglasses and sunscreen, what beach activity are you looking forward to?",
+        "text": "Your wife wants you to figure this out on your own for once. She said to go to FEC.gov and do your own research. Where is the first place you look?",
         "image" : "smaller_images/at_beach.png",
 "choices": {
-            "Build a sandcastle with your friends!": [41,["Garlic"]],
-            "Set up a beach picnic": [41,["Green Bean", "Bok Choy", "Pumpkin"]],
-            "Explore tide pools and collect shells": [41,["Leek", "Carrot"]],
-            "Read the book you've been eyeing": [41,[ "Broccoli", "Tomato"]],
+            "I go to the map page I need pictures.": [41,["Leadership PAC"]],
+            "I search my wife's name to see if she is donating to someone already": [4169,["Joint Fundraising Committee", "Candidate Committee", "Just a Donor"]],
+            "I dig into who is donating to candidates to see if I align with their views": [41,["FEC Commissioner", "National Party Committee"]],
+            "I download the full bulk data and hope I can figure it out.": [41,[ "You moved to Canada instead", "a RAD Analyst"]],
         }
     },
-    "41": {
-        "text": "The sun feels so nice, everyone is having a blast! You start to think: ",
+    "4169": {
+        "text": "Your wife does not have any itemized contributions at least. ",
         "image" : "smaller_images/having_beach_fun.png",
 "choices": {
-            "This is fun, I'm grateful for my friends": [7,["Garlic", "Napa Cabbage"]],
-            "This shell is so funky lol": [7,["Green Bean", "Bok Choy", "Pumpkin", "Tomato"]],
-            "Love my friends, but I wanna go home": [7,["Leek", "Carrot"]],
-            "What if we all went scuba diving": [7,["Broccoli", "Onion"]],
+            "okay, I'll move on": [41,[]],
+        }
+    "41": {
+        "text": "You notice millions of dollars are being spent in your area from out of state (or district). You start to think: ",
+        "image" : "smaller_images/having_beach_fun.png",
+"choices": {
+            "I have to do something!": [7,["Leadership PAC", "Hybrid Committee"]],
+            "but why?": [7,["Joint Fundraising Committee", "Candidate Committee", "Just a Donor", "a RAD Analyst"]],
+            "Wow, so many people are interested in us very cool.": [7,["FEC Commissioner", "National Party Committee"]],
+            "I'm getting a headache.": [7,["You moved to Canada instead", "A committee with absolutely no activity"]],
         }
     },
     "7": {
-        "text": "Suddenly, a large shadow falls over the beach. \
-                 A giant hand reaches down from the sky, and scoops you and \
-                 your friends up, and the world turns dark...",
+        "text": "Suddenly, BREAKING NEWS appears on your phone \
+                 The favorite candidate for your district, Phil A. Buster, has been caught in a scandal \
+                 They were caught eating pineapple on pizza \
+                 This will not be tolerated in your district",
         "image" : "smaller_images/beach_disaster.png",
 "choices": {
             "Continue": [8,[]]
         }
     },
     "8": {
-        "text": "As you and your friends regain consciousness, you realize you're \
-                in someone's pantry! Hurry and escape before the human eats you!",
+        "text": "This election is now personal. \
+                You must get involved. What's your plan?",
         "image" : "smaller_images/in_pantry.png",   
 "choices": {
-            "Everyone sprint for the nearby window!": [9,["Jalapeno"]],
-            "How about we stealth our way out the window instead": [9,["Tomato", "Potato"]],
-            "Listen to your friend who suggests escaping through the backyard": [19, ["Carrot"]]
+            "Donate $10 to the opposing candidate, Councilwoman Anita Vote": [9,["Super PAC"]],
+            "Order a yard sign that says, For a Slice of Common Sense—Keep Pineapple Off the Pizza!": [9,["a RAD Analyst", "Separate Segregated Fund"]],
+            "Rally your friends to support the opposing candidate, Councilwoman Anita Vote": [19, ["National Party Committee"]]
         }
     },
     "9": {
-        "text": "Shoot! The window is stuck and won't slide open!",
+        "text": "A few days later you see Anita is falling behind in the polls. The Hawaiians are supporting Phil A. Buster from out of state!",
         "image" : "smaller_images/window_locked.png",
 "choices": {
-            "How about we go down the hole instead?": [19, ["Napa Cabbage", "Tomato", "Potato"]],
-            "Try using oil to loosen locking mechanism": [48, ["Carrot", "Broccoli", "Onion"]],
-            "Chuck kitchen utensils to break the window >:)": [55, ["Jalapeno", "Green Bean"]]
+            "I need to talk to Big Pizza about supporting Anita": [19, ["Hybrid Committee", "a RAD Analyst", "Separate Segregated Fund"]],
+            "What state is the opposite of Hawaii maybe they will help.": [48, ["National Party Committee", "You moved to Canada instead", "A committee with absolutely no activity"]],
+            "We need to raise more money for Anita.": [55, ["Super PAC", "Joint Fundraising Committee"]]
         }
     },
     "48" :{
-        "text": "Sweet! The window slides open nicely!",
+        "text": "I mean geographically that's Maine... \ 
+            Are you sure you want to go to Maine? \
+            We could just go talk to the Hawaiians...",
         "image" : "smaller_images/window_jump.png",
 "choices": {
-            "Jump out the window with no hesitation. Cya!": [49, ["Jalapeno", "Garlic", "Broccoli"]],
-            "Look for something to land on before jumping": [49,["Leek", "Tomato", "Napa Cabbage"]],
-            "Um I'm scared of heights": [49, ["Potato"]]
+            "Ugh I guess that's kind of far away though...": [49, ["Super PAC", "Leadership PAC", "You moved to Canada instead"]],
+            "I could go for a vacation in Hawaii!": [49,["FEC Commissioner", "a RAD Analyst", "Hybrid Committee"]],
+            "Um I'm scared of planes": [49, ["Separate Segregated Fund"]]
         }
     },
     "55" :{
-        "text" : "You and your friends start hurling plates, pots, pans, \
-                  and as your friend throws the last bar of soap, the window\
-                  breaks open!",
+        "text" : "You and your friends start planning a fundraiser for Anita, \
+                  a mysterious email appears in your inbox, \
+                  IVE BEEN WATCHING YOU. MEET ME IN HONOLULU, \
+                  YOUR PLANE TICKET IS ATTACHED.",
         "image" : "smaller_images/breaking_window.png",
 "choices": {
-                    "How did we get away with that": [49, ["Tomato"]],
-                    "Go go go! The human is going to come soon": [49, ["Broccoli", "Garlic"]],
-                    "Woohoo! Let's go!": [49, ["Pumpkin", "Green Bean", "Bok Choy"]]
+                    "spooky. fine. if i must.": [49, ["a RAD Analyst"]],
+                    "I needed this vacation, I'm in.": [49, ["You moved to Canada instead", "Leadership PAC"]],
+                    "Wow, I've really made it. This is the recognition I deserve.": [49, ["Just a Donor", "Joint Fundraising Committee", "Candidate Committee"]]
                 }
     },
     "49" :{    
-        "text": "Stepping through the exit,transports you to the Corn Cosmos,\
-                and you're now in a corn rocket floating in space!\
-                What gadget are you going to tinker with to get back home?",
+        "text": "Stepping off the plane in Hawaii ,\
+                you are met with a group of large individuals in black suits\
+                How do you react?",
         "image" : "smaller_images/corn_space.png",
 "choices": {
-            "The lever that takes you into hyperspace (or whatever they call it) in the movies": [10,["Bok Choy"]],
-            "*Methodically* type random stuff in the holographic keyboard above you": [10, ["Onion", "Green Bean"]]
+            "Wow this security detail is for me? nice.": [10,["Candidate Committee"]],
+            "I need to run away ASAP": [10,["Just a Donor", "You move to Canada instead"]],
+            "*Finger guns*": [10, ["A committee with absolutely no activity", "Joint Fundraising Committee", "Super PAC"]]
         }
     },
     "10": {
-        "text": "Buckle up! Stars and green galaxies fly by as the corn rocket shoots off!",
+        "text": "The suited folks grab you and drag you into a limo. The president sits in front of you.",
         "image" : "smaller_images/space_travel.png",
 "choices": {
-            "Wow. This is beautiful...": [43, ["Napa Cabbage"]],
-            "Please take us back *veggie fingers intensely crossed*": [43,["Potato", "Broccoli"]],
-            "I recognize that constellation! It's Ori-onion!": [43, ["Leek"]]
+            "uhhh hi?": [43, ["Hybrid Committee"]],
+            "I'm scared": [43,["Separate Segregated Fund", "You moved to Canada instead"]],
+            "...Boy do I have a bone to pick with you.": [43, ["FEC Commissioner"]]
         }
     },
     "43" : {
-        "text": "\"Umm where we are now...\" asks one of your friends. What should you guys do next?",
+        "text": "The president shakes his head. \"this was the best option?\" he asks. He sighs and hands you a briefcase with $5,010 and exits the car.",
         "image" : "smaller_images/space_confusion.png",
 "choices": {
-            "Pull more levers and press more buttons!": [11,["Jalapeno", "Onion"]],
-            "Look around for a map. There's surely one in the ship right?": [39, ["Leek", "Tomato", "Broccoli"]],
-            "Organize everyone and discuss team plan": [39,["Garlic"]]
+            "I need to get this to Anita!": [11,["Super PAC", "A committee with absolutely no activity"]],
+            "Is this legal? What's happening?": [39, ["FEC Commissioner", "a RAD Analyst", "You moved to Canada instead"]],
+            "You call your political friends to make a plan": [39,["Leadership PAC"]]
         }
     },
     "11" : {
-        "text": "In your button frenzy, a glowing orb appears in the spaceship.",
+        "text": "This will go over your contribution limit for Anita.",
         "image" : "smaller_images/glowing_space_orb.png",
 "choices":{
-            "Is this the end?": [42, ["Potato", "Napa Cabbage"]],
-            "Everyone hide!": [42, ["Onion"]],
-            "ALIENS!": [42, ["Bok Choy"]],
+            "I know how I can still use it all.": [42, ["Separate Segregated Fund", "Hybrid Committee"]],
+            "Crap.": [42, ["A committee with absolutely no activity"]],
+            "Well. I still need to buy a plane ticket home.": [42, ["Candidate Committee"]],
         }
     },
     "42": {
@@ -129,9 +140,9 @@ const gameData = {
                 VeggieVille natives, so stupid. Let me take you back.\"",
         "image" : "smaller_images/glowing_popcorn.png",
 "choices": {
-            "Thanks...": [12,["Potato"]],
-            "THANK YOU! You saved us!":[12,["Pumpkin", "Green Bean", "Jalapeno"]],
-            "Thank you so much! How can I repay you?": [12,["Onion", "Carrot"]]
+            "Thanks...": [12,["Separate Segregated Fund"]],
+            "THANK YOU! You saved us!":[12,["Just a Donor", "Joint Fundraising Committee", "Super PAC"]],
+            "Thank you so much! How can I repay you?": [12,["A committee with absolutely no activity", "National Party Committee"]]
         }
     },
     "39" : {
@@ -139,22 +150,22 @@ const gameData = {
             has an idea for what buttons to press.",
         "image" : "smaller_images/spaceplan.png",
 "choices": {
-            "Full send! VeggieVille here we come": [40,["Jalapeno", "Green Bean", "Broccoli"]],
-            "We should double check...": [40, ["Broccoli", "Carrot"]],
-            "Someone else press the button, I can't do it": [40, ["Potato"] ],
-            "Let's all press the button together!": [40, ["Napa Cabbage", "Green Bean"]]
+            "Full send! VeggieVille here we come": [40,["Super PAC", "Joint Fundraising Committee", "You moved to Canada instead"]],
+            "We should double check...": [40, ["You moved to Canada instead", "National Party Committee"]],
+            "Someone else press the button, I can't do it": [40, ["Separate Segregated Fund"] ],
+            "Let's all press the button together!": [40, ["Hybrid Committee", "Joint Fundraising Committee"]]
         }
     },
     "40": {
-        "text": "\"Here goes nothing!\" As Link the Leek reaches for the lever, \
+        "text": "\"Here goes nothing!\" As Link the FEC Commissioner reaches for the lever, \
         Oli the Onion yells \"Wait! I don't feel good about this. I'm really scared...\". \
         What do you do?",
         "image" : "smaller_images/pull_lever.png",
 "choices": {
-            "It was me. I was the one that yelled": [44, ["Pumpkin", "Green Bean", "Carrot"]],
-            "Re-explain the plan. See? Nothing to be afraid of": [44,["Onion", "Broccoli"]],
-            "Stand back and let someone else handle the situation": [44, ["Potato", "Tomato"]],
-            "Go over and comfort them.": [44,["Green Bean", "Napa Cabbage"]]
+            "It was me. I was the one that yelled": [44, ["Just a Donor", "Joint Fundraising Committee", "National Party Committee"]],
+            "Re-explain the plan. See? Nothing to be afraid of": [44,["A committee with absolutely no activity", "You moved to Canada instead"]],
+            "Stand back and let someone else handle the situation": [44, ["Separate Segregated Fund", "a RAD Analyst"]],
+            "Go over and comfort them.": [44,["Joint Fundraising Committee", "Hybrid Committee"]]
         }
     },
     "44": {
@@ -163,10 +174,10 @@ const gameData = {
             You're back in VeggieVille!",
         "image" : "smaller_images/backhome.png",
 "choices": {
-            "Time to hit up Club Carrot! I need to let loose": [13, ["Bok Choy", "Jalapeno"]],
-            "Go to your favorite spot to unwind by yourself": [13, ["Potato"]],
-            "Call all of VeggieVille for a picnic and to tell everyone what happened": [13, ["Garlic"]],
-            "Throw up from the rocket-sickness": [13, ["Pumpkin"]]
+            "Time to hit up Club National Party Committee! I need to let loose": [13, ["Candidate Committee", "Super PAC"]],
+            "Go to your favorite spot to unwind by yourself": [13, ["Separate Segregated Fund"]],
+            "Call all of VeggieVille for a picnic and to tell everyone what happened": [13, ["Leadership PAC"]],
+            "Throw up from the rocket-sickness": [13, ["Just a Donor"]]
         }
     },
     "12" : {
@@ -174,29 +185,29 @@ const gameData = {
                 You find yourself back in VeggieVille. What do you do now?",
         "image" : "smaller_images/backhome.png",
 "choices": {
-            "Wait...was that an alien?": [13,["Bok Choy", "Leek" ]],
-            "Cry. That was a lot to go through": [13,["Napa Cabbage"]],
-            "Celebrate with your friends!": [13,["Tomato", "Jalapeno", "Carrot", "Broccoli"]],
-            "Take a breather somewhere secluded": [13,["Pumpkin", "Leek"]]
+            "Wait...was that an alien?": [13,["Candidate Committee", "FEC Commissioner" ]],
+            "Cry. That was a lot to go through": [13,["Hybrid Committee"]],
+            "Celebrate with your friends!": [13,["a RAD Analyst", "Super PAC", "National Party Committee", "You moved to Canada instead"]],
+            "Take a breather somewhere secluded": [13,["Just a Donor", "FEC Commissioner"]]
         }
     },
     "4":{
         "text": "So many books to choose from! What catches your eye first?",
         "image" : "smaller_images/which_book.png",
 "choices" : {
-            "A whimsical, heartwarming slice of life novel.": [15,["Napa Cabbage", "Pumpkin"]],
-            "The Great Gourdsby, classic literature": [15,["Broccoli"]],
-            "Sherlettuce Holmes, a thrilling mystery novel": [15,["Leek", "Carrot"]],
-            "A self help book": [15, ["Onion"]]
+            "A whimsical, heartwarming slice of life novel.": [15,["Hybrid Committee", "Just a Donor"]],
+            "The Great Gourdsby, classic literature": [15,["You moved to Canada instead"]],
+            "Sherlettuce Holmes, a thrilling mystery novel": [15,["FEC Commissioner", "National Party Committee"]],
+            "A self help book": [15, ["A committee with absolutely no activity"]]
         }
     },
     "15" :{
         "text": "There are a couple of events going on today at the book store! Which do you go to?",
         "image" : "smaller_images/bookstore_activities.png",
 "choices" : {
-            "Join a book club discussion on the hottest new book": [16,["Green Bean", "Pumpkin"]],
-            "Book scavenger hunt around the store for a free prize":[16,["Jalapeno", "Leek"]],
-            "A creative writing workshop and storytelling event":[16, ["Onion", "Bok Choy", "Carrot"]]     
+            "Join a book club discussion on the hottest new book": [16,["Joint Fundraising Committee", "Just a Donor"]],
+            "Book scavenger hunt around the store for a free prize":[16,["Super PAC", "FEC Commissioner"]],
+            "A creative writing workshop and storytelling event":[16, ["A committee with absolutely no activity", "Candidate Committee", "National Party Committee"]]     
         }
     },
     "16":{
@@ -204,10 +215,10 @@ const gameData = {
         Everyone is buffeted in a vortex up and up...",
         "image" : "smaller_images/vortex.png",
 "choices":{
-            "Goodbye everyone it was nice knowing you": [17,["Potato","Green Bean", "Tomato"]],
-            "Error 404 veggie brain is in a state of panic": [17, ["Napa Cabbage"]],
-            "Everyone try holding hands!": [17,["Broccoli", "Onion", "Carrot"]],
-            "Weeee!": [17,["Jalapeno", "Pumpkin"]],
+            "Goodbye everyone it was nice knowing you": [17,["Separate Segregated Fund","Joint Fundraising Committee", "a RAD Analyst"]],
+            "Error 404 veggie brain is in a state of panic": [17, ["Hybrid Committee"]],
+            "Everyone try holding hands!": [17,["You moved to Canada instead", "A committee with absolutely no activity", "National Party Committee"]],
+            "Weeee!": [17,["Super PAC", "Just a Donor"]],
        } 
     },
     "17": {
@@ -222,10 +233,10 @@ const gameData = {
         "text": "Get out ASAP before you get eaten!",
         "image" : "smaller_images/in_fridge.png",
 "choices":{
-            "Hide and wait for the refrigerator door to open": [18,["Broccoli", "Pumpkin"]],
-            "Rally the veggie friends to push the door. Roll out!": [18,["Jalapeno", "Bok Choy"]],
-            "Try to unplug the refrigerator from the inside": [18, ["Onion","Leek"]],
-            "Do what the others do": [18,["Potato"]]
+            "Hide and wait for the refrigerator door to open": [18,["You moved to Canada instead", "Just a Donor"]],
+            "Rally the veggie friends to push the door. Roll out!": [18,["Super PAC", "Candidate Committee"]],
+            "Try to unplug the refrigerator from the inside": [18, ["A committee with absolutely no activity","FEC Commissioner"]],
+            "Do what the others do": [18,["Separate Segregated Fund"]]
         }
     },
     "18": {
@@ -233,9 +244,9 @@ const gameData = {
                 of the house! What's next?",
         "image" : "smaller_images/out_fridge.png",
 "choices": {
-            "Hop on the dog's back!": [19,["Jalapeno"]],
-            "Stealth your way to the front door": [19, ["Tomato", "Leek"]],
-            "Jump out the nearby window!": [9, ["Onion", "Bok Choy"]]
+            "Hop on the dog's back!": [19,["Super PAC"]],
+            "Stealth your way to the front door": [19, ["a RAD Analyst", "FEC Commissioner"]],
+            "Jump out the nearby window!": [9, ["A committee with absolutely no activity", "Candidate Committee"]]
         }
     },
     "19": {
@@ -243,9 +254,9 @@ const gameData = {
             swiss cheese caves. What's your next move?",
         "image" : "smaller_images/cheeseland.png",
 "choices": {
-            "Make a charcuterie board as a snack break": [20, ["Onion", "Green Bean"]],
-            "Go inland in search of the Cheese Castle": [20,["Leek", "Broccoli"]],
-            "Ask others what they think the group should do": [20, ["Napa Cabbage", "Green Bean", "Pumpkin"]]
+            "Make a charcuterie board as a snack break": [20, ["A committee with absolutely no activity", "Joint Fundraising Committee"]],
+            "Go inland in search of the Cheese Castle": [20,["FEC Commissioner", "You moved to Canada instead"]],
+            "Ask others what they think the group should do": [20, ["Hybrid Committee", "Joint Fundraising Committee", "Just a Donor"]]
         }
     },
     "20":{
@@ -253,8 +264,8 @@ const gameData = {
                 \"What are you doing? This is sacred cheese you're eating!\"",
         "image" : "smaller_images/mad_gouda.png",
 "choices" : {
-            "You want some?": [21,["Onion", "Potato", "Jalapeno", "Green Bean"]],
-            "Apologize immediately and ask how to get to Cheese Castle":[21, ["Pumpkin", "Leek"]]
+            "You want some?": [21,["A committee with absolutely no activity", "Separate Segregated Fund", "Super PAC", "Joint Fundraising Committee"]],
+            "Apologize immediately and ask how to get to Cheese Castle":[21, ["Just a Donor", "FEC Commissioner"]]
         }
     },
     "21": {
@@ -263,18 +274,18 @@ const gameData = {
                 must be entertained in order to be seen.",
         "image" : "smaller_images/cheese_castle.png",
 "choices":{
-            "Sing and dance the CheeseLand anthem": [22,["Napa Cabbage", "Pumpkin"]],
-            "Offer some leftover charcuterie to the king": [22,["Jalapeno", "Potato"]],
-            "Comedy skit but all the punch lines are exclusively cheese puns": [22, ["Bok Choy", "Onion", "Broccoli"]]
+            "Sing and dance the CheeseLand anthem": [22,["Hybrid Committee", "Just a Donor"]],
+            "Offer some leftover charcuterie to the king": [22,["Super PAC", "Separate Segregated Fund"]],
+            "Comedy skit but all the punch lines are exclusively cheese puns": [22, ["Candidate Committee", "A committee with absolutely no activity", "You moved to Canada instead"]]
         }
     },
     "22": {
         "text": "The Cheese King laughs, but you're not sure if he's laughing with you or at you...",
         "image" : "smaller_images/performance.png",
 "choices": {
-            "Keep going, the show must go on!": [51,["Bok Choy", "Garlic", "Carrot"]],
-            "Guy's I'm not sure if this is working": [51, ["Tomato", "Leek"]],
-            "Try to ignore the king and power through": [51, ["Napa Cabbage", "Broccoli"]]
+            "Keep going, the show must go on!": [51,["Candidate Committee", "Leadership PAC", "National Party Committee"]],
+            "Guy's I'm not sure if this is working": [51, ["a RAD Analyst", "FEC Commissioner"]],
+            "Try to ignore the king and power through": [51, ["Hybrid Committee", "You moved to Canada instead"]]
         }
     },
     "51": {
@@ -282,10 +293,10 @@ const gameData = {
         what do you miss the most about home?",
         "image" : "smaller_images/happy_king.png",
 "choices": {
-            "The warm sunlight and fresh air": [23,["Jalapeno", "Potato", "Napa Cabbage"]],
-            "The hanging out with your veggie friends": [23,["Leek", "Green Bean", "Carrot"]],
-            "The smell of your grandma's cherry pies": [23,["Pumpkin"]],
-            "Weekly frisbee games at the park": [23,["Bok Choy", "Broccoli"]]
+            "The warm sunlight and fresh air": [23,["Super PAC", "Separate Segregated Fund", "Hybrid Committee"]],
+            "The hanging out with your veggie friends": [23,["FEC Commissioner", "Joint Fundraising Committee", "National Party Committee"]],
+            "The smell of your grandma's cherry pies": [23,["Just a Donor"]],
+            "Weekly frisbee games at the park": [23,["Candidate Committee", "You moved to Canada instead"]]
         }
     },
     "23": {
@@ -293,87 +304,87 @@ const gameData = {
                     Where do you guys want to visit on the way back?",
         "image" : "smaller_images/boat.png",
 "choices":{
-            "Mushroom Island, known for pioneering mushroom tech": [24,["Tomato", "Onion", "Leek"]],
-            "Dandelion Plains, known for its sunshine and farms": [25,["Potato", "Napa Cabbage", "Green Bean", "Pumpkin", "Carrot"]],
-            "Forget-Me-Not Island, largely unexplored territory": [26, ["Jalapeno", "Onion", "Broccoli"]]
+            "Mushroom Island, known for pioneering mushroom tech": [24,["a RAD Analyst", "A committee with absolutely no activity", "FEC Commissioner"]],
+            "Dandelion Plains, known for its sunshine and farms": [25,["Separate Segregated Fund", "Hybrid Committee", "Joint Fundraising Committee", "Just a Donor", "National Party Committee"]],
+            "Forget-Me-Not Island, largely unexplored territory": [26, ["Super PAC", "A committee with absolutely no activity", "You moved to Canada instead"]]
         }
     },
     "24": {
         "text": "Arrived at Mushroom Island! What are you gonna do?",
         "image" : "smaller_images/mushroom.png",
 "choices" :{
-            "Get a new mushroom telephone, its got wider coverage with its latest spore dispersion technology": [27,["Tomato", "Carrot"]],
-            "Party on da MushrooSoft roof, they're debuting their latest vehicle, the Vroomie Schroomie": [27,["Bok Choy", "Carrot"]],
-            "Buy a little mushroom keepsake for you and your friends": [27, ["Napa Cabbage", "Green Bean"]],
-            "I just wanna go back home tbh": [27, ["Potato", "Garlic"]]
+            "Get a new mushroom telephone, its got wider coverage with its latest spore dispersion technology": [27,["a RAD Analyst", "National Party Committee"]],
+            "Party on da MushrooSoft roof, they're debuting their latest vehicle, the Vroomie Schroomie": [27,["Candidate Committee", "National Party Committee"]],
+            "Buy a little mushroom keepsake for you and your friends": [27, ["Hybrid Committee", "Joint Fundraising Committee"]],
+            "I just wanna go back home tbh": [27, ["Separate Segregated Fund", "Leadership PAC"]]
         }
     },
     "25": {
         "text": "Arrived at Dandelion Plains! What are you gonna do?",
         "image" : "smaller_images/dandelion.png",
 "choices": {
-            "Make dandelion crowns with friends": [27,["Green Bean", "Carrot", "Bok Choy"]],
-            "Buy some dandelion honey to gift to your cheese navigator and cheese king": [27,["Napa Cabbage", "Onion", "Pumpkin"]],
-            "Re-check the weather to make sure you'll be able to get home on as planned ": [27,["Tomato", "Garlic", "Leek"]],
+            "Make dandelion crowns with friends": [27,["Joint Fundraising Committee", "National Party Committee", "Candidate Committee"]],
+            "Buy some dandelion honey to gift to your cheese navigator and cheese king": [27,["Hybrid Committee", "A committee with absolutely no activity", "Just a Donor"]],
+            "Re-check the weather to make sure you'll be able to get home on as planned ": [27,["a RAD Analyst", "Leadership PAC", "FEC Commissioner"]],
         }
     },
     "26": {
         "text": "Arrived at Forget-Me-Not Island! What are you gonna do?",
         "image" : "smaller_images/forgetmenot.png",
 "choices": {
-            "Explore to make the first-ever forget me not island map!": [27,["Garlic", "Leek"]],
-            "Paint various views to share with VeggieVille": [27,["Napa Cabbage", "Green Bean"]],
-            "I wanna go home": [27,["Tomato", "Potato"]],
-            "Have a photo shoot with your friends in the forget me nots": [27,["Jalapeno", "Pumpkin", "Carrot", "Carrot"]]
+            "Explore to make the first-ever forget me not island map!": [27,["Leadership PAC", "FEC Commissioner"]],
+            "Paint various views to share with VeggieVille": [27,["Hybrid Committee", "Joint Fundraising Committee"]],
+            "I wanna go home": [27,["a RAD Analyst", "Separate Segregated Fund"]],
+            "Have a photo shoot with your friends in the forget me nots": [27,["Super PAC", "Just a Donor", "National Party Committee", "National Party Committee"]]
         }
     },
     "27": {
         "text": "After your pit stop, you finally arrive home in VeggieLand. What are you doing first?",
         "image" : "smaller_images/backhome.png",
 "choices": {
-            "Party at Club Carrot. Dance the night away!": [13,["Jalapeno"]],
-            "Spend some alone time at your favorite cozy bench/spot.": [13,["Pumpkin"]],
-            "Organize a community picnic to share your adventures": [13,["Napa Cabbage", "Green Bean"]],
-            "Hangout with your friends at a restaurant": [13,["Pumpkin", "Garlic", "Carrot"]]
+            "Party at Club National Party Committee. Dance the night away!": [13,["Super PAC"]],
+            "Spend some alone time at your favorite cozy bench/spot.": [13,["Just a Donor"]],
+            "Organize a community picnic to share your adventures": [13,["Hybrid Committee", "Joint Fundraising Committee"]],
+            "Hangout with your friends at a restaurant": [13,["Just a Donor", "Leadership PAC", "National Party Committee"]]
         }
     },
     "13": {
         "text": "Last question! After a night of good rest, the next morning you:",
         "image" : "smaller_images/another_day.png",
 "choices" : {
-            "Go to a cafe to finally read that book": [0,["Napa Cabbage", "Potato", "Carrot"]],
-            "Head to work, get that bag": [0,["Tomato", "Leek"]],
-            "Organize a community clean up day": [0,["Pumpkin", "Green Bean", "Garlic"]],
-            "Go on a veggie run": [0, ["Jalapeno", "Bok Choy"]]
+            "Go to a cafe to finally read that book": [0,["Hybrid Committee", "Separate Segregated Fund", "National Party Committee"]],
+            "Head to work, get that bag": [0,["a RAD Analyst", "FEC Commissioner"]],
+            "Organize a community clean up day": [0,["Just a Donor", "Joint Fundraising Committee", "Leadership PAC"]],
+            "Go on a veggie run": [0, ["Super PAC", "Candidate Committee"]]
         } 
     },
     "5":{
         "text": "What are you guys gonna do at the apartment?",
         "image" : "smaller_images/at_apartment.png",
 "choices": {
-            "Arts and crafts": [28,["Carrot", "Pumpkin"]],
-            "Drink lots of beverages (wink wink)": [28,["Bok Choy", "Potato"]],
-            "Play games! Loser has to post an embarassing pic on Vegstagram": [28,["Tomato", "Garlic"]],
-            "Gossip!!!": [28, ["Napa Cabbage"]]
+            "Arts and crafts": [28,["National Party Committee", "Just a Donor"]],
+            "Drink lots of beverages (wink wink)": [28,["Candidate Committee", "Separate Segregated Fund"]],
+            "Play games! Loser has to post an embarassing pic on Vegstagram": [28,["a RAD Analyst", "Leadership PAC"]],
+            "Gossip!!!": [28, ["Hybrid Committee"]]
         }
     },
     "28": {
-        "text": "Leo the Leek goes off to get some snacks for everyone, but shortly \
+        "text": "Leo the FEC Commissioner goes off to get some snacks for everyone, but shortly \
                 after he leaves, you hear him scream!",
         "image" : "smaller_images/apartment.png",
 "choices": {
-            "SCREAM!!!": [45, ["Bok Choy", "Carrot"]],
-            "Leo you good?": [45,["Green Bean", "Garlic"]],
-            "Oh no! Is Leo ok?": [45, ["Tomato", "Pumpkin", "Onion"]]
+            "SCREAM!!!": [45, ["Candidate Committee", "National Party Committee"]],
+            "Leo you good?": [45,["Joint Fundraising Committee", "Leadership PAC"]],
+            "Oh no! Is Leo ok?": [45, ["a RAD Analyst", "Just a Donor", "A committee with absolutely no activity"]]
         }
     },
     "45": {
         "text": "You don't hear a response from Leo. You should check in on him...",
         "image" : "smaller_images/no_response.png",
 "choices": {
-            "Mobilize everyone and proceed towards the scream": [29,["Broccoli", "Garlic"]],
-            "Stay in the middle of the pack": [29, ["Napa Cabbage", "Green Bean"]],
-            "Linger in the back, you're scared": [29, ["Tomato", "Pumpkin", "Carrot"]]
+            "Mobilize everyone and proceed towards the scream": [29,["You moved to Canada instead", "Leadership PAC"]],
+            "Stay in the middle of the pack": [29, ["Hybrid Committee", "Joint Fundraising Committee"]],
+            "Linger in the back, you're scared": [29, ["a RAD Analyst", "Just a Donor", "National Party Committee"]]
         }
     },
     "29": {
@@ -381,10 +392,10 @@ const gameData = {
                 room. What’s the first thing you investigate?",
         "image" : "smaller_images/room.png",
 "choices" : {
-            "Heck no I’m not investigating!": [30,["Tomato"]],
-            "The open window and it’s billowing curtains… it’s suspicious": [30,["Leek"]],
-            "The closet. It looks slightly disheveled?": [30,["Broccoli"]],
-            "Call the veggie police!": [30, ["Carrot", "Garlic"]]
+            "Heck no I’m not investigating!": [30,["a RAD Analyst"]],
+            "The open window and it’s billowing curtains… it’s suspicious": [30,["FEC Commissioner"]],
+            "The closet. It looks slightly disheveled?": [30,["You moved to Canada instead"]],
+            "Call the veggie police!": [30, ["National Party Committee", "Leadership PAC"]]
         }
     },
     "30": {
@@ -392,19 +403,19 @@ const gameData = {
                 presence swoop you and your friends out of the window!",
         "image" : "smaller_images/beach_disaster.png",
 "choices": {
-                "Struggle against whatever it is and try to escape": [46, ["Onion"]],
-                "Scream for help": [46, ["Garlic"]],
-                "Cry a little": [46, ["Tomato", "Pumpkin"]],
-                "Am I gonna die?": [46, ["Potato"]]
+                "Struggle against whatever it is and try to escape": [46, ["A committee with absolutely no activity"]],
+                "Scream for help": [46, ["Leadership PAC"]],
+                "Cry a little": [46, ["a RAD Analyst", "Just a Donor"]],
+                "Am I gonna die?": [46, ["Separate Segregated Fund"]]
         }
     },
     "46": {
         "text": "As light enters back into your world, you realize you’re in a grocery bag!",
         "image" : "smaller_images/grocery_bag.png",
 "choices" : {
-            "Everyone jump! That'll break the bag right?": [31,["Garlic", "Onion"]],
-            "Use your plant abilities to poke holes into bag": [31,["Green Bean"]],
-            "Photosynthesize extra fast, get big = break the bag": [31, ["Broccoli", "Jalapeno"]]
+            "Everyone jump! That'll break the bag right?": [31,["Leadership PAC", "A committee with absolutely no activity"]],
+            "Use your plant abilities to poke holes into bag": [31,["Joint Fundraising Committee"]],
+            "Photosynthesize extra fast, get big = break the bag": [31, ["You moved to Canada instead", "Super PAC"]]
         }
     },
     "31": {
@@ -412,34 +423,34 @@ const gameData = {
                 The human is reaching for you!",
         "image" : "smaller_images/grocery_bag_out.png",
 "choices": {
-            "Panic! There's too much going on": [32,["Pumpkin", "Potato", "Napa Cabbage"]],
-            "Juke the human so hard they have to leave out of embarrassment": [32,["Jalapeno", "Bok Choy"]],
-            "JUST RUN!!!!": [32, ["Garlic", "Carrot", "Broccoli"]]
+            "Panic! There's too much going on": [32,["Just a Donor", "Separate Segregated Fund", "Hybrid Committee"]],
+            "Juke the human so hard they have to leave out of embarrassment": [32,["Super PAC", "Candidate Committee"]],
+            "JUST RUN!!!!": [32, ["Leadership PAC", "National Party Committee", "You moved to Canada instead"]]
         }
     },
     "32": {
         "text": "You've found a temporary hiding place under a shelf. Where to next?",
         "image" : "smaller_images/hiding.png",
 "choices": {
-            "Through the air vents": [49,["Carrot", "Broccoli", "Tomato"]],
-            "Mad dash through the store until you find an exit": [49, ["Jalapeno", "Onion"]]
+            "Through the air vents": [49,["National Party Committee", "You moved to Canada instead", "a RAD Analyst"]],
+            "Mad dash through the store until you find an exit": [49, ["Super PAC", "A committee with absolutely no activity"]]
         }
     },
     "6":{
         "text": "Arrived at Mount Evergetable. What do you do at the base camp?",
         "image" : "smaller_images/base_evergetable.png",
 "choices": {
-            "Survey the Terrain and Plan the Best Route": [33, ["Tomato", "Broccoli"]],
-            "Energize the Team with a Motivational Speech": [33, ["Bok Choy", "Green Bean", "Garlic"]],
-            "Take a moment to appreciate the view of mount evergetable": [33, ["Carrot"]]
+            "Survey the Terrain and Plan the Best Route": [33, ["a RAD Analyst", "You moved to Canada instead"]],
+            "Energize the Team with a Motivational Speech": [33, ["Candidate Committee", "Joint Fundraising Committee", "Leadership PAC"]],
+            "Take a moment to appreciate the view of mount evergetable": [33, ["National Party Committee"]]
         }
     },
     "33": {
         "text": "As you near the summit, night falls and you have the choice to rest or keep going",
         "image" : "smaller_images/nightfalls.png",
 "choices": {
-            "Seek Shelter in a Nearby Cave": [34,["Leek", "Pumpkin", "Tomato"]],
-            "Climb on!": [36,["Bok Choy", "Garlic"]]
+            "Seek Shelter in a Nearby Cave": [34,["FEC Commissioner", "Just a Donor", "a RAD Analyst"]],
+            "Climb on!": [36,["Candidate Committee", "Leadership PAC"]]
         }
     },
     "34": {
@@ -447,20 +458,20 @@ const gameData = {
                  pass the night.",
         "image" : "smaller_images/cave.png",
 "choices" : {
-            "Gather resources and make a makeshift camp": [37,["Carrot", "Tomato"]],
-            "Collectively to decide what to do": [37, ["Garlic"]],
-            "Telling exciting stories and reflect on the trek so far": [37, ["Green Bean"]],
-            "Map out next steps of the journey": [37, ["Broccoli"]],
+            "Gather resources and make a makeshift camp": [37,["National Party Committee", "a RAD Analyst"]],
+            "Collectively to decide what to do": [37, ["Leadership PAC"]],
+            "Telling exciting stories and reflect on the trek so far": [37, ["Joint Fundraising Committee"]],
+            "Map out next steps of the journey": [37, ["You moved to Canada instead"]],
         }
     },
     "36": {
         "text": "The veggie squad continues, but they decide to take a quick break.",
         "image" : "smaller_images/evergetable_climb.png",
 "choices": {
-            "Stargazing break!": [37,["Napa Cabbage"]],
-            "Why are we stopping?": [37,["Jalapeno"]],
-            "Snack time! Food is fuel": [37, ["Green Bean"]],
-            "Check in with everyone to see how they're doing": [37,["Broccoli", "Napa Cabbage", "Garlic"]],
+            "Stargazing break!": [37,["Hybrid Committee"]],
+            "Why are we stopping?": [37,["Super PAC"]],
+            "Snack time! Food is fuel": [37, ["Joint Fundraising Committee"]],
+            "Check in with everyone to see how they're doing": [37,["You moved to Canada instead", "Hybrid Committee", "Leadership PAC"]],
         }
     },
     "37": {
@@ -477,28 +488,28 @@ const gameData = {
         swiss cheese caves, and rosemary fields. What's your move?",
         "image" : "smaller_images/cheeseland.png",
 "choices": {
-            "Make a charcuterie board as a snack break": [20,["Leek", "Jalapeno"]],
-            "Go inland in search of Cheese City": [20,["Onion", "Napa Cabbage", "Carrot"]],
-            "Ask others what they think the group should do": [20,["Broccoli", "Green Bean", "Napa Cabbage"]],
-            "Lead the pack using your knowledge of Cheese Land geography": [20,["Garlic"]]
+            "Make a charcuterie board as a snack break": [20,["FEC Commissioner", "Super PAC"]],
+            "Go inland in search of Cheese City": [20,["A committee with absolutely no activity", "Hybrid Committee", "National Party Committee"]],
+            "Ask others what they think the group should do": [20,["You moved to Canada instead", "Joint Fundraising Committee", "Hybrid Committee"]],
+            "Lead the pack using your knowledge of Cheese Land geography": [20,["Leadership PAC"]]
         }
     }
 
 
 };
 const personalities = { 
-    "Onion": 0,
-    "Broccoli": 0,
-    "Garlic": 0, // The Leader
-    "Jalapeno": 0, // The Adventurer
-    "Tomato": 0, // The Analyst
-    "Green Bean": 0, // The Connector
-    "Pumpkin": 0, // The Caregiver
-    "Carrot": 0, // The Visionary
-    "Potato": 0, // The Realist
-    "Napa Cabbage": 0, // The Harmonizer
-    "Bok Choy": 0, // The Performer
-    "Leek": 0 // The Investigator
+    "A committee with absolutely no activity": 0, // Did You Really Try?
+    "You moved to Canada instead": 0, // The Foreigner
+    "Leadership PAC": 0, // The Leader
+    "Super PAC": 0, // The Adventurer
+    "a RAD Analyst": 0, // The Analyst
+    "Joint Fundraising Committee": 0, // The Connector
+    "Just a Donor": 0, // The Caregiver
+    "National Party Committee": 0, // The Visionary
+    "Separate Segregated Fund": 0, // The Realist
+    "Hybrid Committee": 0, // The Harmonizer
+    "Candidate Committee": 0, // The Performer
+    "FEC Commissioner": 0 // The Investigator
 };
 
 let currentState = 1;
@@ -573,12 +584,12 @@ function revealMostSelectedVegetable() {
         storyImage.style.display = 'none';
         choicesContainer.style.display = 'none';
     
-        text.textContent = "Drumroll... here is your Veggie ID! Don't lose it! (Right click or hold the image to save)";
+        text.textContent = "Drumroll... here is your Committee Type! Don't lose it, you might have filing obligations! (Right-click or hold the image to save)";
         text.appendChild(img);
 
         // Share button functionality
         shareButton.onclick = () => {
-            const shareMessage = `Check out my Veggie ID! You can create yours at https://sophie006liu.github.io/vegetal/`;
+            const shareMessage = `Check out how this nerd thing!`;
             navigator.clipboard.writeText(shareMessage).then(() => {
                 alert('Link copied to clipboard!');
             }).catch(err => {
